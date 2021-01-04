@@ -1,0 +1,29 @@
+
+As for the steps, if you have the ISO and verified it has no sector errors, you can use the tools to rip all the sprites yourself. The tools requires command-line PHP 7.0+ to run, and do not need any extensions.
+
+Be sure to run it on a hard disk with a lot of free space, because it will create a tons of files.
+
+1) run "php.exe psxbin2iso.php XG.bin" first to convert it to 2048/sector iso file.
+
+2) run "php.exe psxiso_hidden.php XG.bin.iso" to extract all the files.
+
+3) go to folder "3921", you should see there are 16 *.bin files there.
+
+4) run "php.exe xeno_battle_2d *.bin" to rip + reassemble the sprites.
+
+5) you will get a bunch of *.rgba or *.clut files on each folder. run "php.exe clut2bmp.php *.rgba" to convert them. That's the sprites. (NOTE: 0.meta = animation data, 1.meta = frame data , 2.meta = palettes)
+
+After that, you'll need to repeat step 4 and 5 on other folders. Let me know if you having problem here before continue.
+
+6) go to "3938", "3380", "2925" and "2617", repeat step 4 and 5 on all files.
+
+7) go to "605", this is the "map" folder, it should be 1460 files. Run "php.exe xeno_map2battle.php *.bin". Go to each created folders, repeat step 4 and 5 on the *.bin files (NOTE: *.dec are for debugging)
+
+8) go to "426", the files here are compressed. run "php.exe xeno_decode.php *.bin" to decompress them. Repeat step 4 and 5 on *.bin files. (NOTE: *.bak are backup original compressed file)
+
+9) if you want special effect graphics, go to "3380" and run "php.exe xeno_1201_vram.php *.bin". By default, I set it to rip in grayscale, but if you want color, open the php file and remove '//' on line 86 and 87, then rerun the command. Repeat step 5 on those *.clut files.
+
+10) For map textures, go to "605" and run the command from step 9 on all *.bin files.
+
+That's pretty much all the important ones. The *.php has linux newlines, so you will need Notepad++ to correctly open them.
+

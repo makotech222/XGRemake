@@ -1,0 +1,577 @@
+!SceneAsset
+Id: 0e228816-0b7a-42f4-aba6-eedc3bd11f08
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+ChildrenIds: []
+Offset: {X: 0.0, Y: 0.0, Z: 0.0}
+Hierarchy:
+    RootParts:
+        - ref!! bab70138-3747-4a2f-9061-b62597f67a19
+        - ref!! 58b41f66-4e3d-4599-a70e-38cad02585ba
+        - ref!! f777c0a1-d3c4-478e-aa3a-ccee444e7af2
+        - ref!! ec04a486-1990-4b37-b1ec-a2a0e9d2141b
+        - ref!! 961ca3fd-65a8-4258-9c73-ab757adddae3
+        - ref!! 11b723dc-00fb-404a-89dc-a48e86e5b55d
+        - ref!! 73ac3e34-edc0-44f8-811e-271277fb7b53
+        - ref!! e59f6aa7-1e9a-4f77-bf92-2b2401b7af87
+        - ref!! a08f91f4-f50f-4803-9602-dddc8caf52b5
+        - ref!! 47903c1d-1712-47c9-89e8-c58e0354cce9
+        - ref!! 370bd140-b358-49a1-8357-2c1b137a6659
+        - ref!! c7d54489-59ba-4b79-a4fe-44026b0f2e0f
+        - ref!! 15e83bb5-772a-4462-8e0a-dc304130d5d4
+    Parts:
+        -   Folder: World
+            Entity:
+                Id: 11b723dc-00fb-404a-89dc-a48e86e5b55d
+                Name: Cube
+                Components:
+                    46de943fd460b5cbaf466d99ab507de0: !TransformComponent
+                        Id: 158977cb-765e-4e19-b9ec-2ea635c00be5
+                        Position: {X: -2.440569, Y: 0.5, Z: 0.0048561096}
+                        Rotation: {X: 0.0, Y: 0.15643448, Z: 0.0, W: 0.98768836}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    33bda9df7193b0bdd7dd4f2d55e71377: !ModelComponent
+                        Id: 62b965ef-0d51-41aa-a382-038dd4e49f90
+                        Model: 69ad09e6-361d-441f-90fa-e98e95676aea:Models/Cube
+                        Materials:
+                            74852e85fcc86072397f0b8068a5994d~0: b9f5f990-3cc5-4280-8557-a8644ec9ab69:Models/Sphere Material
+                    fcf1eab7dbfdb03c74978b50909251a2: !StaticColliderComponent
+                        Id: 88327ffe-71a1-4c90-b71e-b84616cbd89a
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            355a94544f0705b447db37ba7061800f: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.0, Y: 1.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+        -   Entity:
+                Id: 15e83bb5-772a-4462-8e0a-dc304130d5d4
+                Name: Lahan_House_1
+                Components:
+                    1498a014f12259e7c52d55cd8f161fc6: !TransformComponent
+                        Id: 25b54854-f8b3-4bcd-927c-611c0f8e0d96
+                        Position: {X: -11.906874, Y: 0.0, Z: 1.6182127}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    3cbe39aaa8419567944ab8f3b4403c1e: !ModelComponent
+                        Id: 74c50b73-9642-4e68-a622-74c435b63a9d
+                        Model: null
+                        Materials: {}
+        -   Entity:
+                Id: 2c413ab7-c8ad-45b2-aae8-68db7124af33
+                Name: Shadow
+                Components:
+                    954abfa7819254aa81e6147d26600db8: !TransformComponent
+                        Id: c3eaf863-2bc8-454b-9f1d-bc1482173fef
+                        Position: {X: 0.0, Y: 0.2, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 0.35, Y: 1.0, Z: 0.35}
+                        Children: {}
+                    bb5333c380a0b6fbb2a14cfb1bd02609: !ModelComponent
+                        Id: ac518b2b-ff55-4945-ae2c-f7a1f551272c
+                        Model: b595d8ad-c710-4d8e-870d-25213acf4af5:Models/Cylinder
+                        RenderGroup: Group31
+                        Materials:
+                            782f63136e390616f088676451c322b6~0: cc73f83a-9132-4bc1-b247-31e9bf58d3c4:Models/ShadowMaterial
+            Base:
+                BasePartAsset: 8144d8fe-fe8e-429e-a12f-6100f77b3fd9:Prefabs/FieldNPC
+                BasePartId: 565e8f4f-4519-4242-b96a-1441288e8538
+                InstanceId: 6d25066c-06d4-4f7a-8904-178a7d2ccd5f
+        -   Folder: World
+            Entity:
+                Id: 370bd140-b358-49a1-8357-2c1b137a6659
+                Name: SceneChange
+                Components:
+                    e669ba6518ca7ce570966438f7171a90: !TransformComponent
+                        Id: 1618375b-52ac-41f7-b59c-d49a939816da
+                        Position*: {X: -5.65507, Y: 0.5, Z: 0.0}
+                        Rotation*: {X: 0.0, Y: 0.70710677, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 0.25}
+                        Children:
+                            3b0521504fa094f68c0d9e1d732ad40f: ref!! 04b5a94d-01cc-4bf1-ba64-9a5101a90ec1
+                    58d44e635a9eb58335d45864b23e0f2a: !StaticColliderComponent
+                        Id: 873b0081-9509-4bcb-83f9-1c8e6d81d456
+                        CollisionGroup: SensorTrigger
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.0
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            12dd04ce66a1fe63907b5d86819d9821: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.0, Y: 1.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    703921add0d50439f71e028bea4d514a: !ModelComponent
+                        Id: 948188b8-3a22-43a4-a443-6de6edb4dc38
+                        Model: 69ad09e6-361d-441f-90fa-e98e95676aea:Models/Cube
+                        IsShadowCaster: false
+                        Materials:
+                            b6156a6a0ae37e4ce2d4c8ab70f32299~0: cc73f83a-9132-4bc1-b247-31e9bf58d3c4:Models/ShadowMaterial
+                    8ecb46f6ded4ad2fa994dc122c41ac33: !Xenogears.Gameplay.SceneChangeEvent,Xenogears
+                        Id: c4e6a3db-e260-40af-adfc-d8e667b95dbe
+                        RequiresInteraction*: true
+                        SceneChangeId: 0
+                        NextSceneName: Lahan_House_1
+                        NextSceneChangeId: 0
+            Base:
+                BasePartAsset: 516a6c13-c4ed-4a67-aca7-e4c37b69adef:Prefabs/SceneChange
+                BasePartId: 6fd824b0-99b2-4031-9176-f09602310025
+                InstanceId: a4a7d01f-4447-400e-b416-f200e19b9294
+        -   Folder: World
+            Entity:
+                Id: 47903c1d-1712-47c9-89e8-c58e0354cce9
+                Name: Ambient light
+                Components:
+                    398b217f8d7e85264831ccb1c6aca3ee: !TransformComponent
+                        Id: 8191f77c-7b7b-4f3e-bed8-61c53fd6767a
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    403a6a15fd1f2e3408bd17344cf15460: !LightComponent
+                        Id: 02741247-c1d5-42e9-a3ab-123e1d044799
+                        Type: !LightAmbient
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+        -   Folder: World
+            Entity:
+                Id: 58b41f66-4e3d-4599-a70e-38cad02585ba
+                Name: Skybox
+                Components:
+                    78f7f06d26e9d9f01d91997157243256: !TransformComponent
+                        Id: 934e561c-93ee-4cf5-bb8c-22ab1166f1bc
+                        Position: {X: 0.0, Y: 2.0, Z: -2.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    9ed373430b2c3d00a010484c69753966: !BackgroundComponent
+                        Id: 2865d528-52d0-4e69-867c-1afd1661b3f2
+                        Texture: 7459262c-714f-47e7-8cc4-221b70478af3:Models/Skybox texture
+                    34a1355e8dd5a473df5cc615c56f80fd: !LightComponent
+                        Id: cc934d0a-798f-4258-a361-31b42ac380ab
+                        Enabled: false
+                        Type: !LightSkybox
+                            Skybox: 5268c7bc-201b-458f-9400-a684446b2663:Models/Skybox
+        -   Folder: World
+            Entity:
+                Id: 73ac3e34-edc0-44f8-811e-271277fb7b53
+                Name: Cube
+                Components:
+                    46de943fd460b5cbaf466d99ab507de0: !TransformComponent
+                        Id: 31ba625e-e99d-4e5e-b6ab-20f760572da3
+                        Position: {X: -0.0547626, Y: 1.0, Z: -3.2910533}
+                        Rotation: {X: -0.0, Y: -0.2419219, Z: 0.0, W: 0.9702957}
+                        Scale: {X: 1.0, Y: 2.0, Z: 1.0}
+                        Children: {}
+                    33bda9df7193b0bdd7dd4f2d55e71377: !ModelComponent
+                        Id: e0caf658-8fff-4a7a-b072-ad80c2d6ab7a
+                        Model: 69ad09e6-361d-441f-90fa-e98e95676aea:Models/Cube
+                        Materials: {}
+                    fcf1eab7dbfdb03c74978b50909251a2: !StaticColliderComponent
+                        Id: 4d4dcab8-7ab3-4956-9825-0ca1f8e7b023
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            355a94544f0705b447db37ba7061800f: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.0, Y: 1.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+        -   Entity:
+                Id: 87f5c2f5-aa96-4467-9e1c-11edb2f1e870
+                Name: Character
+                Components:
+                    d8fca5ceae8c682c18f6785caf13a3fc: !TransformComponent
+                        Id: de7ce70c-fe1d-486a-ab28-ff21901a6ba3
+                        Position: {X: 0.0, Y: 0.05, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 2.0, Y: 2.5, Z: 2.0}
+                        Children: {}
+                    de5cdbfe30993b3540ba4a933157f103: !SpriteComponent
+                        Id: a8d90283-2488-410c-88a0-40d3afaf32d9
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 9b5abfa6-7626-4c43-bdc5-12593906f6b5:SpriteSheet
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        Intensity: 0.8
+                        PremultipliedAlpha: false
+                        BlendMode: AlphaBlend
+                        Sampler: AnisotropicClamp
+            Base:
+                BasePartAsset: 8144d8fe-fe8e-429e-a12f-6100f77b3fd9:Prefabs/FieldNPC
+                BasePartId: e4116bac-e9c3-498c-a2bf-094976fbbc76
+                InstanceId: c831633b-c4a6-4c99-93d0-a1d5c2af8b4f
+        -   Folder: World
+            Entity:
+                Id: 961ca3fd-65a8-4258-9c73-ab757adddae3
+                Name: Cube
+                Components:
+                    46de943fd460b5cbaf466d99ab507de0: !TransformComponent
+                        Id: 790aad3f-ed53-41eb-b7eb-c81ce5290c40
+                        Position: {X: 2.121981, Y: 2.3038414, Z: -3.6359365}
+                        Rotation: {X: -0.0, Y: -0.06104854, Z: 0.0, W: 0.9981348}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    33bda9df7193b0bdd7dd4f2d55e71377: !ModelComponent
+                        Id: d7158a68-8a19-42b4-bc5f-bea60a160e12
+                        Model: 69ad09e6-361d-441f-90fa-e98e95676aea:Models/Cube
+                        Materials: {}
+                    fcf1eab7dbfdb03c74978b50909251a2: !StaticColliderComponent
+                        Id: 5ce8c8a1-ea23-4099-8f15-decba6de6569
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            355a94544f0705b447db37ba7061800f: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.0, Y: 1.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+        -   Entity:
+                Id: 9773a95e-6f08-4760-ae71-e4448b140978
+                Name: SpawnPoint
+                Components:
+                    82c740d4f713cd4721d6a0717fd4968b: !TransformComponent
+                        Id: 04b5a94d-01cc-4bf1-ba64-9a5101a90ec1
+                        Position: {X: 0.0, Y: -0.49, Z: 2.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+            Base:
+                BasePartAsset: 516a6c13-c4ed-4a67-aca7-e4c37b69adef:Prefabs/SceneChange
+                BasePartId: 53f7114e-f55c-4e8c-9774-6a53c2ff4eb0
+                InstanceId: a4a7d01f-4447-400e-b416-f200e19b9294
+        -   Folder: Characters
+            Entity:
+                Id: a08f91f4-f50f-4803-9602-dddc8caf52b5
+                Name*: NPC1
+                Components:
+                    47cadd8a243c6036415182329c5d5f61: !TransformComponent
+                        Id: 814788cb-3e9d-4396-b67f-5ca83d8b3dad
+                        Position*: {X: -1.4032588, Y: 0.01, Z: 1.2642342}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            d9cbeb47c176b18b7a162b6ad9d002dc: ref!! de7ce70c-fe1d-486a-ab28-ff21901a6ba3
+                            2bc3d2cff72e2e687d581601f6dedd17: ref!! 2ca3c6e8-3f96-4037-a9ea-950e2c4e2b11
+                    32d18f47d70ad4e7098c08df8d3a62d6: !CharacterComponent
+                        Id: 7482f6a4-8d40-468a-9cc5-395d157403c1
+                        CollisionGroup: CustomFilter1
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        FallSpeed: 10.0
+                        MaxSlope: {Radians: 0.7853982}
+                        JumpSpeed: 5.0
+                        Gravity: {X: 0.0, Y: -10.0, Z: 0.0}
+                        ColliderShapes:
+                            3ecc87eab6d6312ed01d4af16d33a805: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 0.5, Y: 1.0, Z: 0.5}
+                                LocalOffset: {X: 0.0, Y: 0.5, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    fac83698063660dcdcebfd38bc21bc96: !Xenogears.Gameplay.NPCFieldCharacter,Xenogears
+                        Id: 8f1dbbbb-901a-43ab-9f99-88d54520c72b
+                        XGCharacterName*: Elly
+                        ActionList: {}
+                        RepeatActions*: true
+            Base:
+                BasePartAsset: 8144d8fe-fe8e-429e-a12f-6100f77b3fd9:Prefabs/FieldNPC
+                BasePartId: 0aa06406-bab9-427d-a825-82d541fd79a4
+                InstanceId: c831633b-c4a6-4c99-93d0-a1d5c2af8b4f
+        -   Folder: World
+            Entity:
+                Id: bab70138-3747-4a2f-9061-b62597f67a19
+                Name: Directional light
+                Components:
+                    2fff216e7acd30263979350b98479e96: !TransformComponent
+                        Id: 57af9637-89c9-4149-b622-bd3784a60d07
+                        Position: {X: 0.0, Y: 2.9362397, Z: 0.0}
+                        Rotation: {X: -5.3385076E-08, Y: 0.70710677, Z: 0.70710677, W: 5.3385076E-08}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    122c3f59333dd270bef8809b46caba79: !LightComponent
+                        Id: bbafea02-2032-4087-a0ff-75d76b5472c9
+                        Type: !LightDirectional
+                            Color: !ColorRgbProvider
+                                Value: {R: 0.84, G: 0.84, B: 0.84}
+                            Shadow:
+                                Enabled: true
+                                Filter: !LightShadowMapFilterTypePcf {}
+                                Size: XLarge
+                                DepthRange:
+                                    IsAutomatic: false
+                                    ManualMinDistance: 1.0
+                                    ManualMaxDistance: 100.0
+                                PartitionMode: !LightDirectionalShadowMap.PartitionLogarithmic {}
+                                ComputeTransmittance: false
+                                BiasParameters:
+                                    DepthBias: 0.001
+                        Intensity: 12.0
+        -   Entity:
+                Id: c7ce991d-699a-4095-a195-5ddec5129d65
+                Name: SpawnPoint
+                Components:
+                    82c740d4f713cd4721d6a0717fd4968b: !TransformComponent
+                        Id: 4fd5a077-10a4-4a44-b772-d324e4f7f370
+                        Position: {X: 0.0, Y: -0.49, Z: 2.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+            Base:
+                BasePartAsset: 516a6c13-c4ed-4a67-aca7-e4c37b69adef:Prefabs/SceneChange
+                BasePartId: 53f7114e-f55c-4e8c-9774-6a53c2ff4eb0
+                InstanceId: c7c86c6f-a58c-4d45-81c8-28d299552c31
+        -   Folder: World
+            Entity:
+                Id: c7d54489-59ba-4b79-a4fe-44026b0f2e0f
+                Name: SceneChange
+                Components:
+                    e669ba6518ca7ce570966438f7171a90: !TransformComponent
+                        Id: 9c850cc2-3d73-4c61-8ca5-4a6d5528057a
+                        Position*: {X: 0.0, Y: 0.5, Z: 3.0}
+                        Rotation*: {X: 0.0, Y: 1.0, Z: 0.0, W: -4.371139E-08}
+                        Scale: {X: 1.0, Y: 1.0, Z: 0.25}
+                        Children:
+                            e10275d9248c382da8d7ece7cfeb9974: ref!! 4fd5a077-10a4-4a44-b772-d324e4f7f370
+                    58d44e635a9eb58335d45864b23e0f2a: !StaticColliderComponent
+                        Id: 4d561a2f-a364-47d6-9025-eddb1d60bf5c
+                        CollisionGroup: SensorTrigger
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.0
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            12dd04ce66a1fe63907b5d86819d9821: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.0, Y: 1.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    703921add0d50439f71e028bea4d514a: !ModelComponent
+                        Id: cdab66d1-3919-4cf2-8245-f9bfb41d6849
+                        Model: 69ad09e6-361d-441f-90fa-e98e95676aea:Models/Cube
+                        IsShadowCaster: false
+                        Materials:
+                            b6156a6a0ae37e4ce2d4c8ab70f32299~0: cc73f83a-9132-4bc1-b247-31e9bf58d3c4:Models/ShadowMaterial
+                    8ecb46f6ded4ad2fa994dc122c41ac33: !Xenogears.Gameplay.SceneChangeEvent,Xenogears
+                        Id: 059054a5-cd7c-487b-8065-7ca13e98b42d
+                        RequiresInteraction: false
+                        SceneChangeId*: 1
+                        NextSceneName*: 
+                        NextSceneChangeId*: 0
+            Base:
+                BasePartAsset: 516a6c13-c4ed-4a67-aca7-e4c37b69adef:Prefabs/SceneChange
+                BasePartId: 6fd824b0-99b2-4031-9176-f09602310025
+                InstanceId: c7c86c6f-a58c-4d45-81c8-28d299552c31
+        -   Entity:
+                Id: cac1d994-e4fc-4d69-9161-a8ab923a17f5
+                Name: Shadow
+                Components:
+                    954abfa7819254aa81e6147d26600db8: !TransformComponent
+                        Id: 2ca3c6e8-3f96-4037-a9ea-950e2c4e2b11
+                        Position: {X: 0.0, Y: 0.2, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 0.35, Y: 1.0, Z: 0.35}
+                        Children: {}
+                    bb5333c380a0b6fbb2a14cfb1bd02609: !ModelComponent
+                        Id: d14ef5e5-6d15-4cd9-bf05-e67c35502742
+                        Model: b595d8ad-c710-4d8e-870d-25213acf4af5:Models/Cylinder
+                        RenderGroup: Group31
+                        Materials:
+                            782f63136e390616f088676451c322b6~0: cc73f83a-9132-4bc1-b247-31e9bf58d3c4:Models/ShadowMaterial
+            Base:
+                BasePartAsset: 8144d8fe-fe8e-429e-a12f-6100f77b3fd9:Prefabs/FieldNPC
+                BasePartId: 565e8f4f-4519-4242-b96a-1441288e8538
+                InstanceId: c831633b-c4a6-4c99-93d0-a1d5c2af8b4f
+        -   Entity:
+                Id: cbdee867-e9cb-4da7-bf71-60c549de7e2d
+                Name: Character
+                Components:
+                    d8fca5ceae8c682c18f6785caf13a3fc: !TransformComponent
+                        Id: dbdf9650-1690-49dc-94bc-76680f31d499
+                        Position: {X: 0.0, Y: 0.05, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 2.0, Y: 2.5, Z: 2.0}
+                        Children: {}
+                    de5cdbfe30993b3540ba4a933157f103: !SpriteComponent
+                        Id: d03797d2-0d6c-41b9-ac83-55c4114d8bfa
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 9b5abfa6-7626-4c43-bdc5-12593906f6b5:SpriteSheet
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        Intensity: 0.8
+                        PremultipliedAlpha: false
+                        BlendMode: AlphaBlend
+                        Sampler: AnisotropicClamp
+            Base:
+                BasePartAsset: 8144d8fe-fe8e-429e-a12f-6100f77b3fd9:Prefabs/FieldNPC
+                BasePartId: e4116bac-e9c3-498c-a2bf-094976fbbc76
+                InstanceId: 6d25066c-06d4-4f7a-8904-178a7d2ccd5f
+        -   Folder: Characters
+            Entity:
+                Id: e59f6aa7-1e9a-4f77-bf92-2b2401b7af87
+                Name*: NPC1
+                Components:
+                    47cadd8a243c6036415182329c5d5f61: !TransformComponent
+                        Id: 0433b60b-0b17-403a-b8ad-872b2743d1af
+                        Position*: {X: 3.0, Y: 0.01, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            d9cbeb47c176b18b7a162b6ad9d002dc: ref!! dbdf9650-1690-49dc-94bc-76680f31d499
+                            2bc3d2cff72e2e687d581601f6dedd17: ref!! c3eaf863-2bc8-454b-9f1d-bc1482173fef
+                    32d18f47d70ad4e7098c08df8d3a62d6: !CharacterComponent
+                        Id: 62c6a69a-1cc4-4165-b79e-dfff50f288ce
+                        CollisionGroup: CustomFilter1
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        FallSpeed: 10.0
+                        MaxSlope: {Radians: 0.7853982}
+                        JumpSpeed: 5.0
+                        Gravity: {X: 0.0, Y: -10.0, Z: 0.0}
+                        ColliderShapes:
+                            3ecc87eab6d6312ed01d4af16d33a805: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 0.5, Y: 1.0, Z: 0.5}
+                                LocalOffset: {X: 0.0, Y: 0.5, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    fac83698063660dcdcebfd38bc21bc96: !Xenogears.Gameplay.NPCFieldCharacter,Xenogears
+                        Id: 7a15a975-dca4-4a8e-b650-9718f3049e21
+                        XGCharacterName*: Elly
+                        ActionList:
+                            883c5f4945a2830deb98c60acb90e59f*:
+                                Action: Walk
+                                Direction: North
+                                Frames: 8
+                                InitialFrame: 0
+                                CurrentFrame: 0
+                                FreezeFrame: false
+                            79af4ab64593fa6dfab15b85736435dc*:
+                                Action: Idle
+                                Direction: South
+                                Frames: 3
+                                InitialFrame: 0
+                                CurrentFrame: 0
+                                FreezeFrame: false
+                            7540fcb8653b1a93f4e9b8085d3883bc*:
+                                Action: Run
+                                Direction: South
+                                Frames: 4
+                                InitialFrame: 0
+                                CurrentFrame: 0
+                                FreezeFrame: false
+                            94e79c9ee52803f6f5153832e08f21e2*:
+                                Action: Idle
+                                Direction: South
+                                Frames: 8
+                                InitialFrame: 0
+                                CurrentFrame: 0
+                                FreezeFrame: false
+                            848ac14f50e8f0cefaec770e58c70bd8*:
+                                Action: Action1
+                                Direction: South
+                                Frames: 8
+                                InitialFrame: 0
+                                CurrentFrame: 0
+                                FreezeFrame: false
+                        RepeatActions*: true
+            Base:
+                BasePartAsset: 8144d8fe-fe8e-429e-a12f-6100f77b3fd9:Prefabs/FieldNPC
+                BasePartId: 0aa06406-bab9-427d-a825-82d541fd79a4
+                InstanceId: 6d25066c-06d4-4f7a-8904-178a7d2ccd5f
+        -   Folder: World
+            Entity:
+                Id: ec04a486-1990-4b37-b1ec-a2a0e9d2141b
+                Name: Cube
+                Components:
+                    46de943fd460b5cbaf466d99ab507de0: !TransformComponent
+                        Id: 174d006c-f6db-4d27-b3b1-8f5e1d5fe8f5
+                        Position: {X: -1.7120614, Y: 0.5, Z: -2.1546304}
+                        Rotation: {X: -0.0, Y: -0.06104854, Z: 0.0, W: 0.9981348}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    33bda9df7193b0bdd7dd4f2d55e71377: !ModelComponent
+                        Id: d4724af3-200e-442c-8ffd-b5801f3321c5
+                        Model: 69ad09e6-361d-441f-90fa-e98e95676aea:Models/Cube
+                        Materials: {}
+                    fcf1eab7dbfdb03c74978b50909251a2: !StaticColliderComponent
+                        Id: 5b1b5a17-45b7-4270-b3f2-ba67e70434f3
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            355a94544f0705b447db37ba7061800f: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.0, Y: 1.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+        -   Folder: World
+            Entity:
+                Id: f777c0a1-d3c4-478e-aa3a-ccee444e7af2
+                Name: Ground
+                Components:
+                    b7db4d3bd2991a3683d2f1b3ade52a9d: !TransformComponent
+                        Id: c196e506-75c7-431d-961f-9a2fbbcf59e0
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 2.0, Y: 1.0, Z: 2.0}
+                        Children: {}
+                    9d79c4fdaaa0c54cdb2a1487da98ce0e: !ModelComponent
+                        Id: de058ba8-f550-40c9-8bee-96fbddf0d7eb
+                        Model: c65c6412-8023-4617-a360-56e7b1d030b5:Models/Ground
+                        RenderGroup: Group1
+                        IsShadowCaster: false
+                        Materials: {}
+                    693fee18a16c8c3a21c65f345174fb39: !StaticColliderComponent
+                        Id: bf6a4ea2-1e91-489f-93a3-7304a3d74a0a
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            aafd06bb28626611e43fb762f8458009: !StaticPlaneColliderShapeDesc
+                                Normal: {X: 0.0, Y: 1.0, Z: 0.0}
+                                Offset: 0.0

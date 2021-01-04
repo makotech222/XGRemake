@@ -1,0 +1,136 @@
+!SceneAsset
+Id: 72da1052-cd0b-4f69-abf3-89cb35266717
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+ChildrenIds: []
+Offset: {X: 0.0, Y: 0.0, Z: 0.0}
+Hierarchy:
+    RootParts:
+        - ref!! 20c57ca9-44c4-4d07-8ed1-7747c5ff8e71
+        - ref!! cbd0623c-63fd-4c53-a129-77e0bfed2bcc
+        - ref!! d9a4ff43-92f6-48bc-9cb9-7b3592cfc47f
+        - ref!! cc02ca97-2813-4c48-93af-da3166d1e8da
+    Parts:
+        -   Folder: World
+            Entity:
+                Id: 20c57ca9-44c4-4d07-8ed1-7747c5ff8e71
+                Name: Directional light
+                Components:
+                    2fff216e7acd30263979350b98479e96: !TransformComponent
+                        Id: b63f9472-e3a8-4a82-abf8-2d4c2c6f5e43
+                        Position: {X: 0.0, Y: 2.9362397, Z: 0.0}
+                        Rotation: {X: -5.3385076E-08, Y: 0.70710677, Z: 0.70710677, W: 5.3385076E-08}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    122c3f59333dd270bef8809b46caba79: !LightComponent
+                        Id: b8879345-5d5c-4b0a-8b5e-e69597ae5f02
+                        Type: !LightDirectional
+                            Color: !ColorRgbProvider
+                                Value: {R: 0.84, G: 0.84, B: 0.84}
+                            Shadow:
+                                Enabled: true
+                                Filter: !LightShadowMapFilterTypePcf {}
+                                Size: XLarge
+                                DepthRange:
+                                    IsAutomatic: false
+                                    ManualMinDistance: 1.0
+                                    ManualMaxDistance: 100.0
+                                PartitionMode: !LightDirectionalShadowMap.PartitionLogarithmic {}
+                                ComputeTransmittance: false
+                                BiasParameters:
+                                    DepthBias: 0.001
+                        Intensity: 12.0
+        -   Entity:
+                Id: 2443d450-1620-49a6-b0c7-47eead96ca73
+                Name: SpawnPoint
+                Components:
+                    82c740d4f713cd4721d6a0717fd4968b: !TransformComponent
+                        Id: 9bcda54b-0a12-46a0-a547-26af937af1bf
+                        Position: {X: 0.0, Y: -0.49, Z: 2.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+            Base:
+                BasePartAsset: 516a6c13-c4ed-4a67-aca7-e4c37b69adef:Prefabs/SceneChange
+                BasePartId: 53f7114e-f55c-4e8c-9774-6a53c2ff4eb0
+                InstanceId: 85a5e597-935b-419d-a13c-f0854f2d1af1
+        -   Folder: World
+            Entity:
+                Id: cbd0623c-63fd-4c53-a129-77e0bfed2bcc
+                Name: Skybox
+                Components:
+                    78f7f06d26e9d9f01d91997157243256: !TransformComponent
+                        Id: 24f43f2c-a859-4180-a72b-f2531f3f00e3
+                        Position: {X: 0.0, Y: 2.0, Z: -2.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    9ed373430b2c3d00a010484c69753966: !BackgroundComponent
+                        Id: d43731ff-8976-448d-93d3-06358d84f3e4
+                        Texture: 7459262c-714f-47e7-8cc4-221b70478af3:Models/Skybox texture
+                    34a1355e8dd5a473df5cc615c56f80fd: !LightComponent
+                        Id: 403ca6d7-ee86-42b4-8153-86d2b723809c
+                        Enabled: false
+                        Type: !LightSkybox
+                            Skybox: 5268c7bc-201b-458f-9400-a684446b2663:Models/Skybox
+        -   Folder: World
+            Entity:
+                Id: cc02ca97-2813-4c48-93af-da3166d1e8da
+                Name: SceneChange
+                Components:
+                    e669ba6518ca7ce570966438f7171a90: !TransformComponent
+                        Id: 50dac96f-e873-4f5d-8ae3-c4597a271bc4
+                        Position*: {X: 2.2581034, Y: 0.49986058, Z: 0.0}
+                        Rotation*: {X: 0.0, Y: 0.70710677, Z: 0.0, W: -0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 0.25}
+                        Children:
+                            2ea790fde89d05f7c20819c22a6cac64: ref!! 9bcda54b-0a12-46a0-a547-26af937af1bf
+                    58d44e635a9eb58335d45864b23e0f2a: !StaticColliderComponent
+                        Id: 73de1013-b1f8-408d-afa9-234eda57683b
+                        CollisionGroup: SensorTrigger
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.0
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            12dd04ce66a1fe63907b5d86819d9821: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.0, Y: 1.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    703921add0d50439f71e028bea4d514a: !ModelComponent
+                        Id: 183f87b7-be54-48ef-9c7a-844b0f615508
+                        Model: 69ad09e6-361d-441f-90fa-e98e95676aea:Models/Cube
+                        IsShadowCaster: false
+                        Materials:
+                            b6156a6a0ae37e4ce2d4c8ab70f32299~0: cc73f83a-9132-4bc1-b247-31e9bf58d3c4:Models/ShadowMaterial
+                    8ecb46f6ded4ad2fa994dc122c41ac33: !Xenogears.Gameplay.SceneChangeEvent,Xenogears
+                        Id: d940f447-a932-46a7-8081-7c0d276ffa6e
+                        RequiresInteraction: false
+                        SceneChangeId: 0
+                        NextSceneName*: DebugScene
+                        NextSceneChangeId: 0
+            Base:
+                BasePartAsset: 516a6c13-c4ed-4a67-aca7-e4c37b69adef:Prefabs/SceneChange
+                BasePartId: 6fd824b0-99b2-4031-9176-f09602310025
+                InstanceId: 85a5e597-935b-419d-a13c-f0854f2d1af1
+        -   Folder: World
+            Entity:
+                Id: d9a4ff43-92f6-48bc-9cb9-7b3592cfc47f
+                Name: Ambient light
+                Components:
+                    398b217f8d7e85264831ccb1c6aca3ee: !TransformComponent
+                        Id: 4c68eb39-c30e-45ab-8822-ee584deeb29a
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    403a6a15fd1f2e3408bd17344cf15460: !LightComponent
+                        Id: b69ee544-e099-4901-a62a-8d4b9ba40e48
+                        Type: !LightAmbient
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}

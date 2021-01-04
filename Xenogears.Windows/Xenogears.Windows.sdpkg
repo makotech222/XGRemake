@@ -1,0 +1,24 @@
+!Package
+SerializedVersion: {Assets: 3.1.0.0}
+Meta:
+    Name: Xenogears.Windows
+    Version: 1.0.0
+    Authors: []
+    Owners: []
+    Dependencies: null
+AssetFolders:
+    -   Path: !dir Assets
+ResourceFolders:
+    - !dir Resources
+OutputGroupDirectories: {}
+ExplicitFolders: []
+Bundles: []
+TemplateFolders: []
+RootAssets:
+    - 0e228816-0b7a-42f4-aba6-eedc3bd11f08:Scenes/DebugScene
+    - 31c9498b-5c8f-421d-be34-44e752603f4d:Prefabs/FieldPlayer
+    - 4cfe2dda-2c74-456e-bcc1-3f196f8b976e:Scenes/Core
+    - 516a6c13-c4ed-4a67-aca7-e4c37b69adef:Prefabs/SceneChange
+    - 72da1052-cd0b-4f69-abf3-89cb35266717:Scenes/Lahan_House_1
+    - 8144d8fe-fe8e-429e-a12f-6100f77b3fd9:Prefabs/FieldNPC
+    - a9d7e9a9-079d-48ba-bebf-af9babe05f28:GraphicsCompositor

@@ -1,0 +1,110 @@
+!PrefabAsset
+Id: 31c9498b-5c8f-421d-be34-44e752603f4d
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+Hierarchy:
+    RootParts:
+        - ref!! fc439776-873b-4969-844a-86f0b0716772
+    Parts:
+        -   Entity:
+                Id: 0af54a98-63c8-4e1d-8191-6de93f2c56a7
+                Name: Shadow
+                Components:
+                    954abfa7819254aa81e6147d26600db8: !TransformComponent
+                        Id: cf68ea8b-9d16-4437-9fda-87a89ba61931
+                        Position: {X: 0.0, Y: 0.2, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 0.35, Y: 1.0, Z: 0.35}
+                        Children: {}
+                    bb5333c380a0b6fbb2a14cfb1bd02609: !ModelComponent
+                        Id: 97c78b2b-ee8d-48de-aadf-ba7878cba12a
+                        Model: b595d8ad-c710-4d8e-870d-25213acf4af5:Models/Cylinder
+                        RenderGroup: Group31
+                        Materials:
+                            782f63136e390616f088676451c322b6~0: cc73f83a-9132-4bc1-b247-31e9bf58d3c4:Models/ShadowMaterial
+        -   Entity:
+                Id: 593de5bd-70bb-4339-b9f7-4309462dd36b
+                Name: Camera
+                Components:
+                    ea1edd245a12068338bf903feff86b02: !TransformComponent
+                        Id: 2681368d-0818-4438-96ef-43852d54c9cf
+                        Position: {X: 0.0, Y: 8.0, Z: 10.0}
+                        Rotation: {X: -0.31730464, Y: 0.0, Z: 0.0, W: 0.94832367}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    b3ff55abd442327bae6c2231e58265cc: !CameraComponent
+                        Id: e6f5b9f8-a432-4627-936a-da38a7977de1
+                        Name: MainCamera
+                        Projection: Perspective
+                        VerticalFieldOfView: 25.0
+                        OrthographicSize: 4.0
+                        NearClipPlane: 0.001
+                        FarClipPlane: 3000.0
+                        Slot: 9a4a5383-d433-47e0-941a-4b9fdf56a9b1
+                    81c613865e849de2c5faafd041120364: !Xenogears.Gameplay.FieldCamera,Xenogears
+                        Id: 0c4d53ff-4c34-49a1-8075-2e25d367628b
+        -   Entity:
+                Id: 65627309-16e4-4446-9dba-2fa90d13e010
+                Name: CameraPoint
+                Components:
+                    86f19a239b18da7fef8bd3ec7e827e6f: !TransformComponent
+                        Id: 935af467-44a3-4ba0-9d26-4db8b0691ba2
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            e9af7060792915e533530207acde1a5e: ref!! 2681368d-0818-4438-96ef-43852d54c9cf
+        -   Entity:
+                Id: a13dae1a-f0fb-4a21-99b8-7633456c5bb2
+                Name: Character
+                Components:
+                    d8fca5ceae8c682c18f6785caf13a3fc: !TransformComponent
+                        Id: f724851a-8708-48f1-a245-764aaf09ba8e
+                        Position: {X: 0.0, Y: 0.05, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 2.0, Y: 2.5, Z: 2.0}
+                        Children: {}
+                    de5cdbfe30993b3540ba4a933157f103: !SpriteComponent
+                        Id: 779856f0-a33c-4cf3-8dea-b196a4ecdfdf
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 9b5abfa6-7626-4c43-bdc5-12593906f6b5:SpriteSheet
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        Intensity: 0.8
+                        PremultipliedAlpha: false
+                        BlendMode: AlphaBlend
+                        Sampler: AnisotropicClamp
+        -   Entity:
+                Id: fc439776-873b-4969-844a-86f0b0716772
+                Name: PlayerEntity
+                Components:
+                    47cadd8a243c6036415182329c5d5f61: !TransformComponent
+                        Id: 34cedb3f-e294-414b-ab8f-43be5e0ae37e
+                        Position: {X: 0.0, Y: 0.01, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            d9cbeb47c176b18b7a162b6ad9d002dc: ref!! f724851a-8708-48f1-a245-764aaf09ba8e
+                            3e8bcaf604ce8cf87af40e7cfffa0b33: ref!! 935af467-44a3-4ba0-9d26-4db8b0691ba2
+                            2bc3d2cff72e2e687d581601f6dedd17: ref!! cf68ea8b-9d16-4437-9fda-87a89ba61931
+                    32d18f47d70ad4e7098c08df8d3a62d6: !CharacterComponent
+                        Id: 2e28d51d-34cf-46c1-bd1a-03bd4f01ee19
+                        CollisionGroup: CharacterFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        FallSpeed: 10.0
+                        MaxSlope: {Radians: 0.7853982}
+                        JumpSpeed: 5.0
+                        Gravity: {X: 0.0, Y: -10.0, Z: 0.0}
+                        ColliderShapes:
+                            3ecc87eab6d6312ed01d4af16d33a805: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 0.5, Y: 1.0, Z: 0.5}
+                                LocalOffset: {X: 0.0, Y: 0.5, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    105942ddf5683d1f7087b39c5fa4598d: !Xenogears.Gameplay.PlayerFieldCharacter,Xenogears
+                        Id: a41ac9d7-cda9-411e-94e5-dbb69c702f87
+                        XGCharacterName: Fei

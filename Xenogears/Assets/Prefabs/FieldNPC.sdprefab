@@ -1,0 +1,79 @@
+!PrefabAsset
+Id: 8144d8fe-fe8e-429e-a12f-6100f77b3fd9
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+Hierarchy:
+    RootParts:
+        - ref!! 0aa06406-bab9-427d-a825-82d541fd79a4
+    Parts:
+        -   Entity:
+                Id: 0aa06406-bab9-427d-a825-82d541fd79a4
+                Name: PlayerEntity
+                Components:
+                    47cadd8a243c6036415182329c5d5f61: !TransformComponent
+                        Id: 09f1f54f-99b4-4a59-bfb1-7dbaedddd910
+                        Position: {X: 0.0, Y: 0.01, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            d9cbeb47c176b18b7a162b6ad9d002dc: ref!! 589c5c26-8f36-40af-8f2c-83dc3555db9b
+                            2bc3d2cff72e2e687d581601f6dedd17: ref!! d96d7808-8df3-47f2-97b2-14ec8e1a4c5f
+                    32d18f47d70ad4e7098c08df8d3a62d6: !CharacterComponent
+                        Id: 47cfa7b8-4ab0-4ea9-b804-f89a9af484c4
+                        CollisionGroup: CustomFilter1
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        FallSpeed: 10.0
+                        MaxSlope: {Radians: 0.7853982}
+                        JumpSpeed: 5.0
+                        Gravity: {X: 0.0, Y: -10.0, Z: 0.0}
+                        ColliderShapes:
+                            3ecc87eab6d6312ed01d4af16d33a805: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 0.5, Y: 1.0, Z: 0.5}
+                                LocalOffset: {X: 0.0, Y: 0.5, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    fac83698063660dcdcebfd38bc21bc96: !Xenogears.Gameplay.NPCFieldCharacter,Xenogears
+                        Id: 1480d261-a54e-4358-a74a-7868eeac80e3
+                        XGCharacterName: Fei
+                        ActionList: {}
+                        RepeatActions: false
+        -   Entity:
+                Id: 565e8f4f-4519-4242-b96a-1441288e8538
+                Name: Shadow
+                Components:
+                    954abfa7819254aa81e6147d26600db8: !TransformComponent
+                        Id: d96d7808-8df3-47f2-97b2-14ec8e1a4c5f
+                        Position: {X: 0.0, Y: 0.2, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 0.35, Y: 1.0, Z: 0.35}
+                        Children: {}
+                    bb5333c380a0b6fbb2a14cfb1bd02609: !ModelComponent
+                        Id: 85ce73aa-6769-4660-967d-253288a71e1b
+                        Model: b595d8ad-c710-4d8e-870d-25213acf4af5:Models/Cylinder
+                        RenderGroup: Group31
+                        Materials:
+                            782f63136e390616f088676451c322b6~0: cc73f83a-9132-4bc1-b247-31e9bf58d3c4:Models/ShadowMaterial
+        -   Entity:
+                Id: e4116bac-e9c3-498c-a2bf-094976fbbc76
+                Name: Character
+                Components:
+                    d8fca5ceae8c682c18f6785caf13a3fc: !TransformComponent
+                        Id: 589c5c26-8f36-40af-8f2c-83dc3555db9b
+                        Position: {X: 0.0, Y: 0.05, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 2.0, Y: 2.5, Z: 2.0}
+                        Children: {}
+                    de5cdbfe30993b3540ba4a933157f103: !SpriteComponent
+                        Id: 80c6792a-46e3-4e2b-a217-c35f0c7c0c3c
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 9b5abfa6-7626-4c43-bdc5-12593906f6b5:SpriteSheet
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        Intensity: 0.8
+                        PremultipliedAlpha: false
+                        BlendMode: AlphaBlend
+                        Sampler: AnisotropicClamp

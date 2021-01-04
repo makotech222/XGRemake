@@ -1,0 +1,22 @@
+!SceneAsset
+Id: 4cfe2dda-2c74-456e-bcc1-3f196f8b976e
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+ChildrenIds: []
+Offset: {X: 0.0, Y: 0.0, Z: 0.0}
+Hierarchy:
+    RootParts:
+        - ref!! 206e8692-b2f0-4a47-aa87-d9326607871d
+    Parts:
+        -   Entity:
+                Id: 206e8692-b2f0-4a47-aa87-d9326607871d
+                Name: Core
+                Components:
+                    c3a893c3df951bd1f76897c6d9b0e074: !TransformComponent
+                        Id: 251f2580-0666-4276-9ac0-32913b90b06e
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    6830313977bb5024f00f1f19962598fe: !Xenogears.Gameplay.Core,Xenogears
+                        Id: dffcd4b8-98aa-4682-bb9d-6745c2bb53c4

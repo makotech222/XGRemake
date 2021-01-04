@@ -1,0 +1,5 @@
+From Xenogears.Database, open powershell
+
+run
+dotnet ef migrations add MIGRATIONNAME --startup-project ..\Xenogears.Windows\Xenogears.Windows.csproj
+dotnet ef database update --startup-project ..\Xenogears.Windows\Xenogears.Windows.csproj
