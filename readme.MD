@@ -36,6 +36,7 @@ Here is a rather low-res video of what it currently looks like: https://webmshar
   - Alternatively, we need to update the resource ripper to be able to pull 3d assets and scenes from the ISO file, so we don't have to create them ourselves.
 - [ ] Refactor the ResourceRipper project. It wasn't originally intended to grow to the size it did. There are lots of opportunities for cleanup and speed improvements.
 - [ ] Move PHP implementation of sprite ripper into C# implementation. Partially started already with one of the scripts being replaced.
+- [ ] Update Sprite Ripper to pull sound/music assets from ISO. Plug into Stride.
 
 ###### Field
 - [ ] Implement the Dialogue system. Needs Database classes/tables, and likely ResourceRipper support for ripping localization from the ISO. Otherwise, enter in text by hand.
